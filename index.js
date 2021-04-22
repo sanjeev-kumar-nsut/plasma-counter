@@ -55,6 +55,9 @@ app.get('/donate',async(req,res)=> {
     const alluser = await User.find();
     res.render('donate',{alluser});
 })
+app.get('/contact',(req,res)=>{
+    res.render('contact');
+})
 
 const port = process.env.PORT || 3000;
 app.listen(port,()=>{

@@ -20,15 +20,16 @@
      <form action="/" method="POST">
      <div>
         <label for="name">Name : </label>
-        <input type="text" id="name" name="name" placeholder="Name">
+        <input type="text" id="name" name="name" placeholder="Name" required>
      </div>
      <div>
         <label for="mobile">Mobile: </label>
-        <input type="text" id="mobile" name="mobile" placeholder="Mobile">   
+        <input type="text" id="mobile" name="mobile" placeholder="Mobile" required>   
      </div>
      <div>
         <label for="location">Location : </label>
         <select id="location" name="location">
+            <option value="">--PLEASE SELECT YOUR LOCATION--</option>
          <option value="Andhra Pradesh">Andhra Pradesh</option>
          <option value="Arunachal Pradesh">Arunachal Pradesh</option>
          <option value="Assam">Assam</option>
@@ -67,6 +68,7 @@
      <div>
         <label for="type" id="type" placeholder="type">Type : </label>
         <select name="type" id="type">
+            <option value="">--PLEASE SELECT ANY--</option>
             <option value="Request Plasma">Request Plasma</option>
             <option value="Donate Plasma">Donate Plasma</option>
         </select>
